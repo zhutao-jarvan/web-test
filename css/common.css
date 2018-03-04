@@ -3,6 +3,11 @@
     margin: 0 ;
     font-family: "微软雅黑" ;
 }
+
+h2 {
+    color: black;
+}
+
 .header {
     height: 72px ;
     background: #458fce ;
@@ -33,7 +38,7 @@ ul li {
     cursor: pointer ;
 }
 a {
-    color: #fff ;
+    color: #fff;
     text-decoration: none ;
 }
 .header ul li:hover {

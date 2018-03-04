@@ -7,10 +7,20 @@
         window.onload = function () {
             document.getElementById("h1hide").hidden = true;
         }
+
+        function swap() {
+            var h1show = document.getElementById("h1hide").hidden;
+            var h1hide = h1show ? false : true;
+
+            document.getElementById("h1hide").hidden = h1hide;
+            document.getElementById("h1show").hidden = h1show;
+        }
+
     </script>
 </head>
 <body>
-    <h1 id="h1show">显示</h1>
+    <h1 id="h1show"> 显示</h1>
     <h1 id="h1hide">不显示</h1>
+    <input type="button" onclick="swap()" value="翻转"/>
 </body>
 </html>
