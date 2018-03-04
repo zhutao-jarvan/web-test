@@ -1,0 +1,55 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>首页</title>
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class='logo'>原创文字</div>
+        <ul>
+            <li class="first" id="m_main"><a href="javascript:void(0)" onclick="body_content('m_main')">首页</a></li>
+            <li id="m_org_story"><a href="javascript:void(0)" onclick="body_content('m_org_story')"> 原创故事</a></li>
+            <li id="m_hot_topic"><a href="javascript:void(0)" onclick="body_content('m_hot_topic')"> 热门专题</a></li>
+            <li id="m_beautiful_art"><a href="javascript:void(0)" onclick="body_content('m_beautiful_art')"> 欣赏美文</a></li>
+            <li id="m_support"><a href="javascript:void(0)" onclick="body_content('m_support')"> 赞助</a></li>
+        </ul>
+        <div class="login">
+                <span id="login_btn"><a href="javascript:void(0)" onclick="body_content()">登陆</span>
+                <span>|</span>
+                <span id="register_btn">注册</span>
+        </div>
+    </div>
+
+    <div class="_body" id="banner_main">
+        <div id="banner">
+            <script language =javascript >
+                var curIndex=1;
+                //时间间隔 单位毫秒
+                var timeInterval=3000;
+                setInterval(changeImg,timeInterval);
+                function changeImg()
+                {
+                    var obj=document.getElementById("showpic");
+                    if (curIndex==5) {
+                        curIndex=1;
+                    } else {
+                        curIndex+=1;
+                    }
+                    obj.src="img/" + curIndex + ".jpg";
+                }
+            </script>
+            <img src="img/1.jpg" width="970" height="280" id="showpic" />
+        </div>
+    </div>
+    <div class="_body" id="login">
+        登录
+    </div>
+
+    <div class="_body" id="org_story">原创故事</div>
+    <div class="_body" id="hot_topic"> 热门专题</div>
+    <div class="_body" id="beautiful_art">欣赏美文</div>
+    <div class="_body" id="support">赞助</div>
+</body>
+</html>
