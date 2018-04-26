@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style type="text/css">
+	ul.polaroids {
+		margin-top: 100px;
+	}
+	
+	ul.polaroids li {
+		display: inline;
+	}
+	ul.polaroids a {
+		display: inline;
+		margin: 0 0 80px 100px;
+		padding: 12px;
+		float: left;
+		text-decoration: none;
+		color: #333;
+		text-align: center;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+		transition: transform 0.15s linear;
+		transform: rotate(-2deg);
+	}
+	
+	ul.polaroids img {
+		border: none;
+		display: block;
+		height: 150px;
+		margin-bottom 12px;
+	}
+	
+	ul.polaroids a:after {
+		content: attr(title)
+	}
+	
+	ul.polaroids li:nth-child(even) a {
+		transform: rotate(10deg);
+	}
+	
+	ul.polaroids li a:hover {
+		transform: scale(1.5);
+	}
+</style>
+</head>
+<body>
+<ul class="polaroids">
+    <li> <a href="1" title="笑笑"> <img src="wallPicImg/1.png" alt="笑笑"> </a> </li>
+    <li> <a href="2" title="佳佳"> <img src="wallPicImg/2.png" alt="佳佳"> </a> </li>
+    <li> <a href="3" title="圆圆"> <img src="wallPicImg/3.png" alt="圆圆"> </a> </li>
+    <li> <a href="4" title="倩倩"> <img src="wallPicImg/4.png" alt="倩倩"> </a> </li>
+</ul>
+</body>
+</html> 
